@@ -1,27 +1,45 @@
-# Simple Task Manager
+# AI Task Manager – Full Stack Assessment
 
 ## Overview
 
-This is a full-stack web application built using:
+This project is a full-stack Task Manager application built using:
 
-- Backend: Python + Flask
-- Frontend: React
-- Database: SQLite (Relational Database)
+- Backend: Python + Flask + SQLAlchemy
+- Frontend: React (Vite)
+- Database: SQLite
+- AI Feature: Modular task description generation
 
-The application allows users to manage daily tasks.
+The application allows users to:
 
-## Features
-
-- Add task
+- Create tasks
 - View tasks
-- Mark task as complete
-- Delete task
-- Optional AI-generated task description
+- Toggle completion status
+- Delete tasks
+- Generate AI-powered task descriptions
+
+---
 
 ## Architecture
 
-React (Frontend)
-        ↓
-Flask REST API (Backend)
-        ↓
-SQLite Database
+### Backend (Flask API)
+
+- RESTful API structure
+- SQLite relational database
+- SQLAlchemy ORM
+- Modular AI route (`/generate-description`)
+- CORS enabled for frontend integration
+
+### Frontend (React)
+
+- Axios for API communication
+- React hooks (useState, useEffect)
+- Dark themed UI
+- Real-time updates
+- AI suggestion display
+
+---
+
+## AI Design Approach
+
+The AI feature is implemented as a modular backend route:
+
